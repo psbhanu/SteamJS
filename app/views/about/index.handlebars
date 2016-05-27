@@ -1,0 +1,24 @@
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-md-7 col-sm-6">
+			<h1>About Steam JS</h1>
+			<p class="lead">!</p>
+		</div>
+		<div class="col-lg-4 col-md-5 col-sm-6">
+			{{#*inline "myPartial"}}
+				My Content
+			{{/inline}}
+	
+			
+			{{#each pageInfo.children}}
+				{{> myPartial}}
+				{{this}}
+			{{/each}}
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-3 col-md-3 col-sm-4">
+
+		</div>
+	</div>
+</div>	

@@ -1,0 +1,33 @@
+{
+  "name": "steamjs",
+  "version": "1.0.0",
+  "description": "Steam JS App",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "6.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psbhanu/SteamJS.git"
+  },
+  "keywords": [
+    "SteamJS"
+  ],
+  "author": "psbhanu <psbhanu@outlook.com> (psbhanu.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/psbhanu/SteamJS/issues"
+  },
+  "homepage": "https://github.com/psbhanu/SteamJS#readme",
+  "dependencies": {
+    "errorhandler": "1.4.3",
+    "express": "4.13.4",
+    "express-handlebars": "3.0.0",
+    "forky": "0.3.0",
+    "morgan": "1.7.0",
+    "serve-favicon": "2.3.0"
+  }
+}

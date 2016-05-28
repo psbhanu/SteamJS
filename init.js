@@ -20,11 +20,14 @@ var init = function() {
 	// views is directory for all template files
 	app.set('views', APP_PATH_VIEWS);
 	
+	//console.log(require(APP_PATH_VIEW_HELPERS));
+	
 	// Use Express-Handlebars 
 	app.engine('handlebars', exphbs({
 		defaultLayout: 'app',
 		layoutsDir: APP_PATH_VIEW_LAYOUTS,
 		partialsDir: APP_PATH_VIEW_PARTIALS,
+		helpers: require(APP_PATH_VIEW_HELPERS)
 	}));
 	app.set('view engine', APP_VIEW_ENGINE);
 	app.use(APP_PATH_STATIC_PREFIX, express.static(APP_PATH_PUBLIC));

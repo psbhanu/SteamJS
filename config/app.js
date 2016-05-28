@@ -17,7 +17,7 @@ config.development = {
     application: {
         port: 8000,
         cookieKey: '8YQM5GUAtLAT34',
-		webConcurrency: 5,
+		webConcurrency: 1,
 		webConcurrencyDefault: false
     }
 };

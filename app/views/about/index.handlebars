@@ -8,7 +8,8 @@
 			{{#*inline "myPartial"}}
 				My Content
 			{{/inline}}
-	
+			
+			{{#generic}} {{this}} {{/generic}}
 			
 			{{#each pageInfo.children}}
 				{{> myPartial}}

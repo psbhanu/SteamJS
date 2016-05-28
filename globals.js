@@ -22,10 +22,12 @@ var globals = {
 	APP_PATH_MIDDLEWARES 	: path.join(APP_PATH_ROOT, 'app', 'middlewares'),
 	APP_PATH_CONTROLLERS	: path.join(APP_PATH_ROOT, 'app', 'controllers'),
 	APP_PATH_MODELS			: path.join(APP_PATH_ROOT, 'app', 'models'),
+	APP_PATH_HELPERS		: path.join(APP_PATH_ROOT, 'app', 'helpers'),
 	
 	APP_PATH_VIEWS 			: path.join(APP_PATH_ROOT, 'app', 'views'),
 	APP_PATH_VIEW_LAYOUTS 	: path.join(APP_PATH_ROOT, 'app', 'views', 'layouts'),
 	APP_PATH_VIEW_PARTIALS 	: path.join(APP_PATH_ROOT, 'app', 'views', 'partials'),
+	APP_PATH_VIEW_HELPERS	: path.join(APP_PATH_ROOT, 'app', 'views', 'helpers'),
 
 	APP_VIEW_ENGINE 		: 'handlebars',
 	

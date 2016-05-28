@@ -3,7 +3,7 @@
 * Author  @ psbhanu
 */
 
-var GenericController = require( APP_PATH_CONTROLLERS + 'generic-controller');
+var GenericController = require( APP_PATH_CONTROLLERS + '/generic-controller');
 
 module.exports = function (app) {
     // Generic Routes

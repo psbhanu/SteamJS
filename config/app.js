@@ -26,7 +26,7 @@ config.production = {
     database: {
         name: 'db_prod_steamjs',
         host: 'localhost',
-        port: '8080',
+        port: '27017',
         credentials: 'admin:password@' // username:password@
     },
     smtp: {

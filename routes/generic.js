@@ -1,9 +1,9 @@
 /**
-* Package @ Steam JS - Routes	
+* Package @ Steam JS - Generic Route	
 * Author  @ psbhanu
 */
 
-var GenericController = require( APP_PATH_CONTROLLERS + '/generic-controller');
+var GenericController = require( APP_PATH_CONTROLLERS + '/generic');
 
 module.exports = function (app) {
     // Generic Routes

@@ -21,9 +21,10 @@ module.exports = function (app) {
 		next();
 	});
 	
+	// Setting General Options
 	app.use(function (request, response, next) {
-		response.pageInfo = response.pageInfo || {};
-		response.pageInfo.children = [12,10];
+		response.page = response.page || {};
+		response.page.children = [12,10];
 		next();
 	});
 };

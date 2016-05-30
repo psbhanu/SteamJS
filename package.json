@@ -23,10 +23,12 @@
   },
   "homepage": "https://github.com/psbhanu/SteamJS#readme",
   "dependencies": {
+    "body-parser": "1.15.1",
     "errorhandler": "1.4.3",
     "express": "4.13.4",
     "express-handlebars": "3.0.0",
     "forky": "0.3.0",
+    "mongoose": "4.4.19",
     "morgan": "1.7.0",
     "serve-favicon": "2.3.0"
   }

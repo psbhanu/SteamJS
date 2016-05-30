@@ -15,8 +15,8 @@ var config 		= require(APP_PATH_CONFIG);
 var cluster 	= require('cluster');  
 var numCPUs 	= require('os').cpus().length;
 
-var webConcurrency 		= process.env.WEB_CONCURRENCY || (config.app[config.app.environment]).application.webConcurrency || 1;
-var defaultConcurrency	= process.env.WEB_CONCURRENCY || (config.app[config.app.environment]).application.webConcurrencyDefault || false;
+var webConcurrency 		= process.env.WEB_CONCURRENCY || config[config.environment].application.webConcurrency || 1;
+var defaultConcurrency	= process.env.WEB_CONCURRENCY || config[config.environment].application.webConcurrencyDefault || false;
 var workers				= (defaultConcurrency) ? numCPUs : webConcurrency;
 
 if (cluster.isMaster) {  

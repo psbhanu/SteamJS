@@ -15,8 +15,15 @@ fs.readdirSync(APP_PATH_VIEW_HELPERS).forEach(function (file) {
 		// Avoid to read this current file.
 		if (file === path.basename(__filename)) { return; }
 		
-		// Load the config file.
-		helpers[file.substr(0, file.length - 3)] = require('./' + file);
+		// Load the helper file.
+		//helpers[file.substr(0, file.length - 3)] = require('./' + file);
+		var helper = require('./' + file);
+		for (var key in helper) {
+			if (helper.hasOwnProperty(key)) {
+				//console.log(key + " -> " + helper[key]);
+				helpers[key] = helper[key];
+			}
+		}
 	} 
 	else {
 		return;

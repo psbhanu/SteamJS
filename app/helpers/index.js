@@ -15,8 +15,15 @@ module.exports = function (app) {
 			// Avoid to read this current file.
 			if (file === path.basename(__filename)) { return; }
 			
-			// Load the middleware file.
-			require('./' + file)(app);
+			// Load the helper file.
+			var helper = require('./' + file);
+			for (var key in helper) {
+				if (helper.hasOwnProperty(key)) {
+					//console.log(key + " -> " + helper[key]);
+					//helpers[key] = helper[key];
+					global[key] = helper[key];
+				}
+			}
 		} 
 		else {
 			return;

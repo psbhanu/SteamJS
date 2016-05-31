@@ -38,13 +38,16 @@ var init = function() {
 	
 	var server = http.createServer(app);
 	
-	// Load all middlewares.
+	// Load Helpers support.
+	require(APP_PATH_HELPERS)(app);	
+
+	// Load all Middlewares.
 	require(APP_PATH_MIDDLEWARES)(app);
 
-	// Load all routes.
+	// Load all Routes.
 	require(APP_PATH_ROUTES)(app);
 
-	// Load medels support.
+	// Load Models support.
 	require(APP_PATH_MODELS);
 
 	// Listen on http port.

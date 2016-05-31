@@ -1,29 +1,20 @@
 /**
-* Package @ Steam JS - Helpers	
+* Package @ Steam JS - Helper - Generic
 * Author  @ psbhanu
 */
 
-var fs = require('fs')
-var morgan = require('morgan');
-var errorHandler = require('errorhandler');
+var helper = helper || {};
 
-// create a write stream (in append mode)
-var accessLogStream = fs.createWriteStream('./logs/access.log', {flags: 'a'})
+helper.SiteIcon = function () { 
+	return '<i aria-hidden="true" class="fa fa-steam-square"></i>';
+}
 
-module.exports = function (app) {
-	app.use(morgan('combined'));
-	app.use(morgan('combined', {stream: accessLogStream}));
-	app.use(errorHandler({ dumpExceptions: true, showStack: true }));
+helper.DeveloperUrl = function () { 
+	return 'http://psbhanu.com';
+}
 
-	// Generic Middlewares
-	app.use(function (request, response, next) {
-		console.log('Time:', Date.now());
-		next();
-	});
-	
-	app.use(function (request, response, next) {
-		response.pageInfo = response.pageInfo || {};
-		response.pageInfo.children = [12,10];
-		next();
-	});
-};
+helper.Developer = function () { 
+	return 'psbhanu.com';
+}
+
+module.exports = helper;

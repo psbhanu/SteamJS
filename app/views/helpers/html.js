@@ -1,5 +1,5 @@
 /**
-* Package @ Steam JS - View Helpers	
+* Package @ Steam JS - View Helper - Html	
 * Author  @ psbhanu
 */
 

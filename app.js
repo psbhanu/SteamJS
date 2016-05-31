@@ -9,6 +9,15 @@ for (var key in globals) {
 	}
 }
 
+/*
+for (var key in global) {
+	if (global.hasOwnProperty(key)) {
+		console.log(key + " -> " + global[key]);
+		//console.log(key);
+	}
+}
+*/
+
 var config 		= require(APP_PATH_CONFIG);
 //var database 	= require(APP_PATH_SERVICES_DB);
 
